@@ -3,7 +3,7 @@ import os
 import re
 
 def Reboot():
-    os,system('python3 app.py')
+    os.system('python3 app.py')
 
 def cls():
     os.system('clear')
