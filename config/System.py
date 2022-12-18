@@ -77,5 +77,5 @@ def pgsingup():
                     cls()
                     print ("Senha nao sao parecidas")
                     pgsingup()
-     except:
-         print ('exit...')
+    except:
+        print ('exit...')
