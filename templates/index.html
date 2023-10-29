@@ -1,0 +1,25 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Pagina Login</title>
+  </head>
+  <body>
+    
+    
+    <form action="{{url_for('index')}}" method="post">
+      <h1 class="subtitle">Painel De Login</h1>
+      <label>Email</label>
+      <input type="text" name="email" placeholder="Email"/>
+      <br>
+      <label>Senha</label>
+      <input type="password" placeholder="Senha" name="pass"/>
+      <br>
+      <h4>{{error}}</h4>
+      <a href="/register">Criar conta</a><input type="submit" value="Entrar"/>
+    </form>
+  </body>
+  
+</html>
