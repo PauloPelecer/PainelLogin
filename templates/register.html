@@ -1,0 +1,32 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Pagina Registrar</title>
+  </head>
+  <body>
+    
+    
+    <form action="{{url_for('register')}}" method="post">
+      <h1 class="subtitle">Painel De Registro</h1>
+      <label>Nome</label>
+      <input type="text" name="nome" placeholder="Nome"/>
+      <br>
+      <h4>{{nameError}}</h4>
+      <label>Email</label>
+      <input type="text" name="email" placeholder="Email"/>
+      <br>
+      <h4>{{emailError}}</h4>
+      
+      <label>Senha</label>
+      <input type="password" placeholder="Senha" name="pass"/>
+      <br>
+      <h4>{{passwordError}}</h4>
+      <br>
+      <a href="/">Voltar</a><input type="submit" value="Criar"/>
+    </form>
+  </body>
+  
+</html>
